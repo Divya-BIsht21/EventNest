@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Event Nest</title>
+    <link rel="stylesheet" href="eventstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+</head>
+
+<body>
+    <header class="sticky-header">
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <div class="sidebar" id="sidebar">
+            <a href="events.html" class="close-btn" id="close-btn">&times;</a>
+            <img src="./img/Screenshot 2024-11-15 203725.png" alt="Logo" class="logo">
+            <ul>
+              <li><a href="index.html" class="list">🏠 Home</a></li>
+              <li><a href="events.html" class="list">📅 Events</a></li>
+              <li><a href="dash.html" class="list">📊 Dash</a></li>
+              <li><a href="join.html" class="list">🎉 Join Clubs</a></li>
+              <li><a href="calendar.html" class="list">📆 Calendar</a></li>
+              <li><a href="feedback.html" class="list" class="active">💬 Feedback</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <div class="content">
+        <h1>Upcoming Events</h1>
+        <div class="filter-section">
+            <div class="search">
+                <form action="action.php"><input type="text" placeholder="Search events...">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="workshop">Workshops</option>
+                <option value="seminar">Seminars</option>
+                <option value="social">Social Events</option>
+            </select>
+
+        </div>
+
+        <section class="event-list">
+            <!-- #1 -->
+            <div class="event-card" data-category="workshop">
+                <img src="./img/mason-c-ltXjtiEkbAw-unsplash.jpg" alt="Event 2" class="img" >
+                <h3>Event Title 2</h3>
+                <p>Date: MM/DD/YYYY</p>
+                <p>Location: Venue Name</p>
+                <p>Brief description of the event.</p>
+                <a href="javascript:void(0)" class="cta-button"
+                    onclick="openModal('Event Title 2', 'Detailed description of the event goes here.')">View
+                    Details</a>
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="eventModal" class="modal"  data-category="seminar">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal()">&times;</span>
+                    <h3 id="modalTitle">Event Title</h3>
+                    <p id="modalDescription">Detailed description of the event goes here.</p>
+                </div>
+            </div>
+
+            <!-- #2 -->
+            <div class="event-card" data-category="seminar">
+                <img src="./img/mason-c--xvTGwcCk7Y-unsplash.jpg" alt="Event 2" class="img">
+                <h3>Event Title 2</h3>
+                <p>Date: MM/DD/YYYY</p>
+                <p>Location: Venue Name</p>
+                <p>Brief description of the event.</p>
+                <a href="javascript:void(0)" class="cta-button"
+                    onclick="openModal('Event Title 2', 'Detailed description of the event goes here.')">View
+                    Details</a>
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="eventModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal()">&times;</span>
+                    <h3 id="modalTitle">Event Title</h3>
+                    <p id="modalDescription">Detailed description of the event goes here.</p>
+                </div>
+            </div>
+
+            <!-- #3 -->
+            <div class="event-card" data-category="social event">
+                <img src="./img/mason-c-Za0Wt0vxx8I-unsplash.jpg" alt="Event 2" class="img">
+                <h3>Event Title 2</h3>
+                <p>Date: MM/DD/YYYY</p>
+                <p>Location: Venue Name</p>
+                <p>Brief description of the event.</p>
+                <a href="javascript:void(0)" class="cta-button" onclick="openModal('Event Title 2', 'Detailed description of the event goes here.')">View Details</a>
+              </div>
+              
+              <!-- Modal Structure -->
+              <div id="eventModal" class="modal">
+                <div class="modal-content">
+                  <span class="close-button" onclick="closeModal()">&times;</span>
+                  <h3 id="modalTitle">Event Title</h3>
+                  <p id="modalDescription">Detailed description of the event goes here.</p>
+                </div>
+            </div>
+
+            <div class="event-card" data-category="workshop">
+                <img src="./img/image5-min-1.png" alt="Event 2" class="img">
+                <h3>Event Title 2</h3>
+                <p>Date: MM/DD/YYYY</p>
+                <p>Location: Venue Name</p>
+                <p>Brief description of the event.</p>
+                <a href="javascript:void(0)" class="cta-button" onclick="openModal('Event Title 2', 'Detailed description of the event goes here.')">View Details</a>
+              </div>
+              <!-- Modal Structure -->
+              <div id="eventModal" class="modal">
+                <div class="modal-content">
+                  <span class="close-button" onclick="closeModal()">&times;</span>
+                  <h3 id="modalTitle">Event Title</h3>
+                  <p id="modalDescription">Detailed description of the event goes here.</p>
+                </div>
+            </div>
+            <div class="event-card" data-category="workshop">
+                <img src="img/blog-43.webp" alt="Event 2" class="img">
+                <h3>Event Title 2</h3>
+                <p>Date: MM/DD/YYYY</p>
+                <p>Location: Venue Name</p>
+                <p>Brief description of the event.</p>
+                <a href="javascript:void(0)" class="cta-button" onclick="openModal('Event Title 2', 'Detailed description of the event goes here.')">View Details</a>
+              </div>
+              
+              <!-- Modal Structure -->
+              <div id="eventModal" class="modal">
+                <div class="modal-content">
+                  <span class="close-button" onclick="closeModal()">&times;</span>
+                  <h3 id="modalTitle">Event Title</h3>
+                  <p id="modalDescription">Detailed description of the event goes here.</p>
+                </div>
+            </div>
+
+            <div class="event-card" data-category="social">
+                <img src="img/blog-43.webp" alt="Event 2" class="img">
+                <h3>Event Title 2</h3>
+                <p>Date: MM/DD/YYYY</p>
+                <p>Location: Venue Name</p>
+                <p>Brief description of the event.</p>
+                <a href="javascript:void(0)" class="cta-button" onclick="openModal('Event Title 2', 'Detailed description of the event goes here.')">View Details</a>
+              </div>
+              
+              <!-- Modal Structure -->
+              <div id="eventModal" class="modal">
+                <div class="modal-content">
+                  <span class="close-button" onclick="closeModal()">&times;</span>
+                  <h3 id="modalTitle">Event Title</h3>
+                  <p id="modalDescription">Detailed description of the event goes here.</p>
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Event Nest</p>
+            <p>Developed by Divya Bisht</p>
+            <div class="footer-links">
+                <a href="https://github.com/Divya-BIsht21" target="_blank">GitHub</a> |
+                <a href="mailto:2004divyabisht@gmail.com">2004divyabisht@gmail.com</a> |
+                <a href="https://www.linkedin.com/in/divya-bisht-135514257" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="evescript.js"></script>
+</body>
+
+</html>

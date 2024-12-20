@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Event Nest</title>
+    <link rel="stylesheet" href="feedstyle.css">
+</head>
+<body>
+
+    <header class="sticky-header">
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <div class="sidebar" id="sidebar">
+            <a href="feedback.html" class="close-btn" id="close-btn">&times;</a>
+            <img src="./img/Screenshot 2024-11-15 203725.png" alt="Logo" class="logo">
+            <ul>
+              <li><a href="index.html" class="list">🏠 Home</a></li>
+              <li><a href="events.html" class="list">📅 Events</a></li>
+              <li><a href="dash.html" class="list">📊 Dash</a></li>
+              <li><a href="join.html" class="list">🎉 Join Clubs</a></li>
+              <li><a href="calendar.html" class="list">📆 Calendar</a></li>
+              <li><a href="feedback.html" class="list" class="active">💬 Feedback</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <div class="content">
+        <div class="feedback">
+            <h1>We Value Your Feedback</h1>
+            <p>Your thoughts help us improve. Please share your experience with us!</p>
+            
+            <form id="feedback-form">
+                <!-- <label for="name">Name:</label> -->
+                 <div class="name">
+                    
+                     <input type="text" id="name" name="name" required placeholder="First Name" >
+                     <input type="text" id="name" name="name" required placeholder="Last Name">
+                 </div>
+                
+                <div class="email"><input type="email" id="email" name="email" required placeholder="Email"></div>
+                 
+
+            
+                <textarea id="message" name="message" rows="4" required placeholder="message..."></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+
+        <section class="community-highlights">
+            <h2>What Our Members Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonials">
+                    <div class="testimonial active">
+                        <blockquote>
+                            <p>“Event Nest made my event planning so much easier!” - Divya Bi</p>
+                        </blockquote>
+                    </div>
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>“Great events, fantastic people!” - Jamie</p>
+                        </blockquote>
+                    </div>
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>“I love being part of this community!” - Alex</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <span class="nav-dot active" data-index="0"></span>
+                    <span class="nav-dot" data-index="1"></span>
+                    <span class="nav-dot" data-index="2"></span>
+                </div>
+            </div>
+        </section>
+    </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Event Nest</p>
+                <p>Developed by Divya Bisht</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Divya-BIsht21" target="_blank">GitHub</a> |
+                    <a href="mailto:2004divyabisht@gmail.com">2004divyabisht@gmail.com</a> |
+                    <a href="https://www.linkedin.com/in/divya-bisht-135514257" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+        
+   
+<script src="main.js"></script>
+    <script src="fscript.js"></script>
+</body>
+</html>

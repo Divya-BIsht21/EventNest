@@ -1,0 +1,277 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #F4F0EC;
+    color: #3B3C36;
+}
+
+/* Header */
+.sticky-header {
+    color: #3B3C36;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.sidebar {
+    width: 15%;
+    background: #A8A9AD;
+    padding: 1rem;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.sidebar.active {
+    left: 0;
+    top: 0;
+}
+
+.sidebar img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.list {
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s;
+}
+
+a {
+    color: #3B3C36;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #6C7C7C;
+}
+
+.close-btn {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.4rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    transition: transform 0.3s ease, background-color 0.1s ease;
+    border-radius: 2px;
+}
+
+.content {
+    margin-left: 15%;
+    width: 85%;
+}
+
+/* Dashboard Styles */
+.dashboard {
+    padding: 20px;
+}
+
+.my-clubs,
+.upcoming-events,
+.quick-actions,
+.settings {
+    background: #D3D3D3;
+    color: #3B3C36;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Event Card */
+.event-card {
+    display: inline-block;
+    width: calc(48% - 10px);
+    margin: 0 1%;
+    background: #D3D3D3;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.event-card img {
+    max-width: 50%;
+    border-radius: 5px;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* Quick Actions */
+.quick-actions button {
+    margin: 10px 5px;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #6C7C7C;
+    color: #F4F0EC;
+}
+
+.quick-actions button:hover {
+    background-color: #3B3C36;
+}
+
+/* Footer */
+.footer {
+    background-color: #A8A9AD;
+    color: #3B3C36;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer .footer-links a {
+    color: #3B3C36;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.footer .footer-links a:hover {
+    color: #6C7C7C;
+}
+
+/* User Statistics Section */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+}
+
+.stat-item {
+    background: #D3D3D3;
+    border: 1px solid #6C7C7C;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item h3,
+.stat-item p {
+    color: #6C7C7C;
+}
+
+/* Recent Activity Section */
+.recent-activity ul li {
+    background: #D3D3D3;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #6C7C7C;
+    color: #3B3C36;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+}
+
+/* Clubs Section */
+.my-clubs ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #D3D3D3;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.remove-club-btn {
+    background-color: #6C7C7C;
+    color: #F4F0EC;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.remove-club-btn:hover {
+    background-color: #3B3C36;
+    transform: scale(1.05);
+}
+
+.remove-club-btn:active {
+    background-color: #2A2A24;
+    transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 29%;
+        left: -250px;
+        padding: 2px;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: flex;
+        padding-top: 1.3em;
+    }
+
+    .hamburger span {
+        background: black;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0px;
+        right: 1px;
+        font-size: 2rem;
+        color: #333;
+        text-decoration: none;
+        cursor: pointer;
+        display: block;
+    }
+    a{
+        display: block;
+      }
+    .logo {
+        padding-top: 14px;
+    }
+
+    .content {
+        margin-top: 5%;
+        margin-left: 0;
+        width: 100%;
+    }
+}

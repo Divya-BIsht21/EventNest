@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Reminder Calendar</title>
+  <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+
+  <header class="sticky-header">
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <div class="sidebar" id="sidebar">
+        <a href="calendar.html" class="close-btn" id="close-btn">&times;</a>
+        <img src="./img/Screenshot 2024-11-15 203725.png" alt="Logo" class="logo">
+        <ul>
+          <li><a href="index.html" class="list">🏠 Home</a></li>
+          <li><a href="events.html" class="list">📅 Events</a></li>
+          <li><a href="dash.html" class="list">📊 Dash</a></li>
+          <li><a href="join.html" class="list">🎉 Join Clubs</a></li>
+          <li><a href="calendar.html" class="list">📆 Calendar</a></li>
+          <li><a href="feedback.html" class="list" class="active">💬 Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="content">
+    <h1>Event Reminder Calendar</h1>
+    <div class="calendar-container">
+      <div class="calendar-header">
+        <select id="year-select"></select>
+        <select id="month-select"></select>
+        <button onclick="toggleEventForm()"> + Add Event</button>
+      </div>
+
+      <div class="days-of-week">
+        <div class="day">Sun</div>
+        <div class="day">Mon</div>
+        <div class="day">Tue</div>
+        <div class="day">Wed</div>
+        <div class="day">Thu</div>
+        <div class="day">Fri</div>
+        <div class="day">Sat</div>
+      </div>
+
+      <div class="dates" id="dates">
+        <!-- Dates will be added by JavaScript -->
+      </div>
+    </div>
+    <div id="eventForm" class="popup">
+      <h3>Add Event</h3>
+      <input type="date" id="eventDate" placeholder="Select date">
+      <input type="text" id="eventTitle" placeholder="Event Title">
+      <button id="close" onclick="addEvent()">Add Event</button>
+      <button id="close" onclick="toggleEventForm()">Close</button>
+    </div>
+  
+    <!-- Event Details Popup -->
+    <div id="eventPopup" class="popup">
+      <h1>Event Details</h1>
+      <p id="eventDateDisplay">Date: </p>
+      <p id="eventDetails">Title: </p>
+      <button id="close" onclick="togglePopup()">Close</button>
+    </div>
+
+ <!-- footerr -->
+ <footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2024 Event Nest</p>
+    <p>Developed by Divya Bisht</p>
+    <div class="footer-links">
+      <a href="https://github.com/Divya-BIsht21" target="_blank">GitHub</a> 
+      <a href="mailto:2004divyabisht@gmail.com">2004divyabisht@gmail.com</a> 
+      <a href="https://www.linkedin.com/in/divya-bisht-135514257" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+</div>
+  <script src="cscript.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

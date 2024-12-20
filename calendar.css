@@ -1,0 +1,359 @@
+/* General reset and body styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color:white; */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-color: #f4f0ec; /* ISABELLINE */
+  margin: 0;
+}
+
+/* Header and Sidebar */
+.sticky-header {
+  color: #3B3C36;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.sidebar {
+  width: 15%;
+  background: #A8A9AD;
+  padding: 1rem;
+  height: 100vh;
+  position: fixed;
+  overflow-y: auto;
+  transition: left 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.sidebar.active {
+  left: 0;
+  top: 0;
+}
+
+
+.sidebar img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+
+
+.list {
+  padding: 10px 15px;
+  display: block;
+  transition: background 0.3s;
+}
+
+a {
+  color: #3B3C36;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  background: #6C7C7C; /* Aurometalsaurus */
+}
+.close-btn {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.4rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    transition: transform 0.3s ease, background-color 0.1s ease;
+    border-radius: 2px;
+}
+
+
+
+/* Main content styling */
+.content {
+  margin-left: 15%; /* Sidebar width */
+  width: 85%;
+  padding: 20px;
+}
+.content h1{
+  display: flex;
+ justify-content: center; 
+ padding: 12px;
+ color: #a69985; /* AUROMETALSAURUS */
+}
+/* Calendar styling */
+.calendar-container {
+  width: 100%; 
+  max-width: 1200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9; /* LIGHT GRAY */
+  text-align: center;
+  border-radius: 8px;
+  
+  margin: 0 auto;
+}
+
+.calendar-header {
+  background-color:#a69985; /* AUROMETALSAURUS */
+  color: #353535; /* BLACK OLIVE */
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.calendar-header button{
+  width: 20%;
+  margin: 1em;
+  background-color: #a69985; /* AUROMETALSAURUS */
+  color: #f4f0ec; /* ISABELLINE */
+  border: none;
+  font-size: 1.6rem;
+}
+#year-select, #month-select{
+  color: #353535; /* BLACK OLIVE */
+  background-color: #a69985; /* AUROMETALSAURUS */
+  border: none;
+  font-size: 2rem;
+}
+.days-of-week {
+  display: flex;
+  color: #dcdcdc; /* QUICK SILVER */
+  font-weight: bold;
+  background-color: #b9b4aa; /* Lightened AUROMETALSAURUS */
+}
+
+.day {
+  width: 34.28%;
+  padding: 8px;
+  font-weight: 1rem;
+}
+
+.dates {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.date {
+  color: #353535; /* BLACK OLIVE */
+  width: 14.28%;
+  padding: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: auto;
+  border: 1px solid #b9b4aa; /* Lightened AUROMETALSAURUS */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.date:hover {
+  background-color: #e3e1de; /* Slightly darker ISABELLINE */
+}
+
+/* Event details popup styling */
+.event-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  padding: 250px;
+  background-color: #f9f9f9; /* LIGHT GRAY */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.event-popup.active {
+  display: block;
+}
+
+.close-popup {
+  color: #a69985; /* AUROMETALSAURUS */
+  cursor: pointer;
+  float: right;
+}
+
+/* Event Form Styling */
+.event-form input,
+.event-form button {
+width: 100%;
+margin: 10px 0;
+padding: 8px;
+}
+
+.event-form.active {
+display: block;
+}
+
+.popup {
+display: none;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #f9f9f9;
+
+border: 1px solid #b9b4aa; 
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+z-index: 1000;
+height: auto;
+width: 40%;
+padding: 25px;
+}
+#eventDate, #eventTitle, button{
+margin-bottom: 1em;
+}
+#eventDetails{
+font-size: 1.3rem;
+margin-bottom: 2em;
+}
+.popup h3{
+padding: 12px 0;
+}
+.popup.active {
+display: flex;
+flex-direction: column;
+position: fixed;
+padding: 23px;
+}
+.date.event {
+background-color: #b9b4aa; /* Lightened AUROMETALSAURUS */ 
+cursor: pointer;
+}
+
+#close{
+padding: 2%;
+background-color: #a69985; /* AUROMETALSAURUS */
+border: none;
+color: #f4f0ec; /* ISABELLINE */
+}
+/* Footer */
+.footer {
+  color: #a2a2a1;
+  width: 85%;
+  text-align: center;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer .footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer .footer-links a {
+  color: #a2a2a1;
+  /* QUICK SILVER */
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.footer .footer-links a:hover {
+  color: #636363;
+  /* BLACK OLIVE */
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .sidebar {
+      width: 29%;
+      left: -250px;
+      padding: 2px;
+  }
+
+  .sidebar.active {
+      left: 0;
+  }
+
+  .hamburger {
+      display: flex;
+      padding-top: 1.3em;
+  }
+
+  .hamburger span {
+      background: black;
+  }
+
+  .close-btn {
+      position: absolute;
+      top: 0px;
+      right: 1px;
+      font-size: 2rem;
+      color: #333;
+      text-decoration: none;
+      cursor: pointer;
+      display: block;
+  }
+.list{
+  padding: 3px 0px;
+}
+  .logo {
+      padding-top: 14px;
+  }
+
+  .content {
+      margin-top: 5%;
+      margin-left: 0;
+      width: 100%;
+  }
+
+  .calendar-container {
+    width: 100%; /* Full width for small screens */
+    padding: 8px;
+  }
+
+  .calendar-header {
+    font-size: 1rem; 
+  }
+
+  .calendar-header button {
+    font-size: 1rem;
+  }
+
+  #year-select, #month-select {
+    font-size: 1.2rem;
+  }
+  a{
+    display: block;
+  }
+  .popup {
+    width: 95%; /* Use nearly full screen */
+    font-size: 0.9rem;
+    padding: 0;
+  }
+  .popup h3{
+    padding: 0;
+  }
+  a{
+    display: block;
+  }
+  #close {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  footer{
+    width: 100%;
+  }
+}
