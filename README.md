@@ -20,28 +20,23 @@ Simplicity and ease of use.
 Customized features for club management.
 Accessibility for students and organizers alike.
 🖥 Screenshots
-Add relevant![Screenshot (159)](https://github.com/user-attachments/assets/792c7652-ea80-4136-a810-fdf27e4cd85f)
+![Screenshot (159)](https://github.com/user-attachments/assets/06f551bc-054c-4a70-a202-273f9b09f09c)
+![Screenshot (160)](https://github.com/user-attachments/assets/daecd882-3cd4-439e-bf0f-e3cbb878f278)
+![Screenshot (161)](https://github.com/user-attachments/assets/4ba37499-935f-4f82-a207-dc67c61ce15b)
+![Screenshot (162)](https://github.com/user-attachments/assets/1f8f1540-e356-4e83-96eb-108b235dfa29)
+![Screenshot (163)](https://github.com/user-attachments/assets/acef7b9c-a76d-4c23-aa6d-326936da6eee)
+![Screenshot (164)](https://github.com/user-attachments/assets/c87314de-43f3-4652-b61a-2e97925eb0f0)
+![Screenshot (166)](https://github.com/user-attachments/assets/97079e94-6be8-488c-b01a-b7b0601a9fb3)
+![Screenshot (167)](https://github.com/user-attachments/assets/b8b9d695-dce9-4599-ad49-1f8308aac2ee)
+![Screenshot (168)](https://github.com/user-attachments/assets/30be0323-c1c8-4749-b0fc-c17503029208)
+![Screenshot (169)](https://github.com/user-attachments/assets/13858a58-337c-4052-86de-3c2f645da182)
+![Screenshot (170)](https://github.com/user-attachments/assets/614a9af5-f02e-4085-b67b-e212bef63120)
+![Screenshot (173)](https://github.com/user-attachments/assets/87855f5c-5d78-48a4-8be6-2744746551ca)
+![Screenshot (175)](https://github.com/user-attachments/assets/d9699712-966e-488c-8585-563c262800a2)
+![Screenshot (176)](https://github.com/user-attachments/assets/5900377c-915a-4dcc-81e3-b0559c4cde27)
+![Screenshot (177)](https://github.com/user-attachments/assets/60c7ae09-4ab8-4210-98d3-d2bd18c09574)
+![Screenshot (178)](https://github.com/user-attachments/assets/6e7fdf63-d795-441e-9ad3-e1ee3368c2a7)
 
-![Screenshot (160)](https://github.com/user-attachments/assets/647ab659-47b3-4853-88f6-df80be3eb1b2)
-
-![Screenshot (162)](https://github.com/user-attachments/assets/88cca1f4-a2b2-44be-9297-a596c141651e)
-
-🤝 Contributions![Screenshot (169)](https://github.com/user-attachments/assets/8e40754f-6b40-46ff-89a4-5d206d445061)
-![Screenshot (170)](https://github.com/user-attachments/assets/c90d3ae7-449d-492e-98e5-96b01bf1b132)
-![Screenshot (171)](https://github.com/user-attachments/assets/1c18e726-1922-4c0f-bc5d-4ca46a16e5d9)
-![Screenshot (172)](https://github.com/user-attachments/assets/c10495f2-ccfc-4cf8-adf8-746e3dc390bc)
-![Screenshot (173)](https://github.com/user-attachments/assets/64b026b7-5b3b-446b-933d-6ed577f7a4d5)
-![Screenshot (174)](https://github.com/user-attachments/assets/1852ece1-c001-4e7b-8fce-7fea91451771)
-![Screenshot (163)](https://github.com/user-attachments/assets/c2edc9fe-8034-46bd-9e39-05a82c229aa1)
-![Screenshot (164)](https://github.com/user-attachments/assets/f6e27736-6abe-43be-8ae5-3d5f5197e9e5)
-![Screenshot (165)](https://github.com/user-attachments/assets/863f8920-0637-4721-ba5d-c0c9a242986a)
-![Screenshot (166)](https://github.com/user-attachments/assets/f1c73a77-8d8f-4832-9c11-b701ae604a9c)
-![Screenshot (167)](https://github.com/user-attachments/assets/a5f9b86f-f42e-4794-8e56-fcef8427d7db)
-![Screenshot (168)](https://github.com/user-attachments/assets/c153ec25-1fdc-4570-b1c0-75cac41cb8f0)
-![Screenshot (175)](https://github.com/user-attachments/assets/8202ab2f-f0a4-4e29-84fc-7b12eb13a90d)
-![Screenshot (176)](https://github.com/user-attachments/assets/8ab6402c-81b8-4246-86ff-e6e31a54f4ff)
-![Screenshot (177)](https://github.com/user-attachments/assets/339a32cf-0721-452d-9928-fc5078991314)
-![Screenshot (178)](https://github.com/user-attachments/assets/455e4f45-4a13-4e68-963f-21de994d2dfa)
 
 Contributions are welcome! Please create a pull request or open an issue for any suggestions or improvements.
 
