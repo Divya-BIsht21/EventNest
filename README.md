@@ -20,7 +20,8 @@ Simplicity and ease of use.
 Customized features for club management.
 Accessibility for students and organizers alike.
 🖥 Screenshots
-Add relevant screenshots of:(https://github.com/user-attachments/assets/2de5a5e4-9fd7-4296-a901-cb40f98e8169)
+Add relevant![Screenshot (159)](https://github.com/user-attachments/assets/792c7652-ea80-4136-a810-fdf27e4cd85f)
+
 ![Screenshot (160)](https://github.com/user-attachments/assets/647ab659-47b3-4853-88f6-df80be3eb1b2)
 
 ![Screenshot (162)](https://github.com/user-attachments/assets/88cca1f4-a2b2-44be-9297-a596c141651e)
